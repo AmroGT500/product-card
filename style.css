@@ -1,0 +1,130 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    background-color: hsl(30, 38%, 92%);
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    max-width: 365px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    justify-content: center;
+}
+
+.product-image .mobile-image{
+    display: block;
+    max-width: 100%; 
+    height: auto;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px;
+}
+
+.product-image .desktop-image{
+    display: none;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 15px;  
+}
+
+
+.product-pricing{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.fraunces-title{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.fraunces-price{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+}
+
+.montserrat-title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    letter-spacing: 4px;
+    color: rgb(0, 0, 0, .60);
+}
+
+.montserrat-body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0, .60);
+}
+
+.montserrat-price{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgb(0, 0, 0, .60);
+    text-decoration: line-through;
+}
+
+.montserrat-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 10px;
+    border: transparent;
+    width: 300px; 
+    height: 50px;
+}
+
+@media(min-width:768px) {
+    .product-card {
+        flex-direction: row;
+        max-width: 758px;
+        height: auto;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .product-details{
+        gap: 30px;
+        font-size: 1.5em;
+    }
+
+    .product-image .mobile-image {
+        display: none;
+    }
+
+    .product-image .desktop-image {
+        display: block;
+        width: 379px;
+        height: 628px;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+
+}
